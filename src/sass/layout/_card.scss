@@ -1,0 +1,139 @@
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.listItem {
+    width: 280px;
+    margin-top: 20px;
+}
+
+.listItemImage {
+    width: 280px;
+    height: 400px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.filmName {
+    color: #000000;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+
+.filmInfo {
+    color: #FF6B08;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.filmRating {
+    font-weight: 500;
+    color: #FFF;
+    background-color: #FF6B08;
+    padding: 3px 12px;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .card-list {
+        padding-top: 27px;
+        justify-content: flex-start;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .listItemImage {
+        width: 336px;
+        height: 494px;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .listItem {
+        width: 336px;
+        margin-top: 32px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .filmName {
+        color: #000000;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .filmInfo {
+        color: #FF6B08;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .card-list {
+        padding-top: 28px;
+        justify-content: flex-start;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .listItemImage {
+        width: 395px;
+        height: 574px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .listItem {
+        width: 395px;
+        margin-top: 32px;
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .filmName {
+        color: #000000;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .filmInfo {
+        color: #FF6B08;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

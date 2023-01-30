@@ -1,0 +1,113 @@
+.pagination {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+
+  &__item {
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &__numb {
+    height: 40px;
+    width: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: #ff6b08;
+      color: #fff;
+      border-radius: 10%;
+      border: none;
+    }
+  }
+
+  &__arrow {
+    background-color: #f7f7f7;
+    border-radius: 10%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: #ff6b08;
+      color: #fff;
+    }
+  }
+
+  // &__arrow-disabled {
+  //   background-color: #f7f7f7;
+  //   border-radius: 10%;
+  //   border: none;
+  //   height: 40px;
+  //   width: 40px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+
+  &__dots {
+    height: 40px;
+    width: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: #ff6b08;
+      color: #fff;
+      border-radius: 10%;
+      border: none;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__active {
+    background-color: #ff6b08;
+    color: #fff;
+    border-radius: 10%;
+    border: none;
+  }
+}
+
+.tui-page-btn.tui-is-disabled.tui-first,
+.tui-page-btn.tui-is-disabled.tui-prev.pagination__arrow,
+.tui-page-btn.tui-first,
+.tui-page-btn.tui-is-disabled.tui-last,
+.tui-page-btn.tui-is-disabled.tui-next,
+.tui-page-btn.tui-last {
+  display: none;
+}
+
+.tui-page-btn.tui-prev {
+  background-image: url(../images/footer-team-photo/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.tui-page-btn.tui-next {
+  background-image: url(../images/footer-team-photo/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.tui-ico-next,
+.tui-ico-prev {
+  display: none;
+}
